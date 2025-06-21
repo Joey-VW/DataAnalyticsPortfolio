@@ -4,7 +4,6 @@ Welcome to my data analytics portfolio! I'm a data professional with 7+ years of
 
 <br><br>
 
-
 ## 🚀 Featured Project: Procurement KPI Analysis
 
 A full-stack analytics project that demonstrates how raw procurement data is transformed, analyzed, and visualized to provide actionable business insights.
