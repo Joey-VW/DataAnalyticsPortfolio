@@ -45,6 +45,6 @@ This dashboard involved:
 ## 📫 Get in Touch
 
 Have questions or want to collaborate on a project?  
-[📧 joey.wisto@gmail.com](mailto:joey.wisto@gmail.com) | [🔗 LinkedIn](www.linkedin.com/in/joey-wisto-ab8159278)
+[📧 joey.wisto@gmail.com](mailto:joey.wisto@gmail.com) | [🔗 LinkedIn](https://www.linkedin.com/in/joey-wisto)
 
 
