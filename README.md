@@ -52,8 +52,7 @@ A lightweight helper module containing a custom `DataFrameInspector` class for q
 
 ## 📬 Contact
 
-- 📧 Email: [joey.wisto@gmail.com](mailto:joey.wisto@gmail.com)
-- 🔗 LinkedIn: [linkedin.com/in/joey-wisto-ab8159278](https://www.linkedin.com/in/joey-wisto-ab8159278)
+[📧 joey.wisto@gmail.com](mailto:joey.wisto@gmail.com) | [🔗 LinkedIn](https://www.linkedin.com/in/joey-wisto)
 
 <br><br>
 
