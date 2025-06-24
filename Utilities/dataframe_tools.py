@@ -22,6 +22,9 @@ class DataFrameInspector:
         """Returns a dictionary of the number of unique values per column."""
         return self.df.nunique().to_dict()
 
+    def _get_missing_counts(self):
+        return self.df.isnull().sum().to_dict()
+
     def _get_unique_value_examples(self, limit=10):
         """
         Returns a dictionary of unique value examples (up to `limit` values).
@@ -37,19 +40,56 @@ class DataFrameInspector:
             unique_examples[col] = unique_str
         return unique_examples
 
+    def _get_numeric_summary_stats(self):
+        """Returns stats for numeric columns; others get None."""
+        stats = {
+            'min': {}, 'max': {}, 'mean': {}, 'std': {},
+            '25%': {}, '50%': {}, '75%': {}
+        }
+
+        for col in self.df.columns:
+            if pd.api.types.is_numeric_dtype(self.df[col]):
+                series = self.df[col]
+                try:
+                    stats['min'][col] = series.min()
+                    stats['max'][col] = series.max()
+                    stats['mean'][col] = series.mean()
+                    stats['std'][col] = series.std()
+                    stats['25%'][col] = series.quantile(0.25)
+                    stats['50%'][col] = series.quantile(0.50)
+                    stats['75%'][col] = series.quantile(0.75)
+                except Exception:
+                    for key in stats:
+                        stats[key][col] = None
+            else:
+                for key in stats:
+                    stats[key][col] = None
+
+        return stats
+
     def generate_summary(self):
-        """Generates a DataFrame with column names, data types, unique value counts, and unique value examples."""
-        data_types = self._get_column_data_types()
+        """Generates a DataFrame with descriptive stats per column."""
+        dtypes = self._get_column_data_types()
         unique_counts = self._get_unique_counts()
+        missing_counts = self._get_missing_counts()
         unique_examples = self._get_unique_value_examples()
+        numeric_stats = self._get_numeric_summary_stats()
 
         summary_df = pd.DataFrame({
-            "Column": list(data_types.keys()),
-            "Data Type": list(data_types.values()),
-            "Unique Values": list(unique_counts.values()),
-            "Unique Examples": list(unique_examples.values())
+            "Column": list(dtypes.keys()),
+            "Data Type": list(dtypes.values()),
+            "Missing Values": [missing_counts[col] for col in dtypes],
+            "Unique Values": [unique_counts[col] for col in dtypes],
+            "Unique Examples": [unique_examples[col] for col in dtypes],
+            "Min": [numeric_stats['min'][col] for col in dtypes],
+            "25%": [numeric_stats['25%'][col] for col in dtypes],
+            "50%": [numeric_stats['50%'][col] for col in dtypes],
+            "75%": [numeric_stats['75%'][col] for col in dtypes],
+            "Max": [numeric_stats['max'][col] for col in dtypes],
+            "Mean": [numeric_stats['mean'][col] for col in dtypes],
+            "Std Dev": [numeric_stats['std'][col] for col in dtypes],
         })
-        summary_df.head()
+
         return summary_df
 
 
