@@ -37,7 +37,7 @@ A full-stack analytics project that demonstrates how raw procurement data is tra
 An automation tool that programmatically scrapes tweet content and engagement data from X (formerly Twitter), with a CLI wrapper for flexible execution.
 
 ### 🧠 1. Scraping Engine & Class Design  
-- **Files**: [`scrapeX.py`](./scrapeX/scrapeX.py), [`scrapeX/README.md`](./scrapeX/README.md)  
+- **Files**: [`scrapeX.py`](./scrapeX/scrapeX.py), [`scrapeX/README.md`](./ScrapeX/README.md)  
 - **Tech**: Python, Selenium, Threading  
 - **Description**:  
   - Scrapes tweets using a class-based Selenium engine with configurable time limits and engagement scraping.
