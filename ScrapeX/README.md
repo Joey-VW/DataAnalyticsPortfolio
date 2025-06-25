@@ -1,4 +1,4 @@
-# ScrapeX: Post Scraper for X (formerly Twitter)
+# ScrapeX: Post Scraping Utility for X
 
 Welcome to `scrapeX`, a robust tweet scraping utility built with Selenium. This tool automates the extraction of tweets from search results or timelines on **X (formerly Twitter)** and supports optional engagement scraping, time-limited runs, and CLI usage.
 
