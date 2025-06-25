@@ -4,7 +4,7 @@ Welcome to my data analytics portfolio! I'm a data professional with 7+ years of
 
 <br><br>
 
-## 🚀 Featured Project: Procurement KPI Analysis
+## 🚀 Featured Project: `Procurement KPI Analysis`
 
 A full-stack analytics project that demonstrates how raw procurement data is transformed, analyzed, and visualized to provide actionable business insights.
 
@@ -32,6 +32,32 @@ A full-stack analytics project that demonstrates how raw procurement data is tra
 
 <br><br>
 
+## 🕸️ Featured Project: `ScrapeX` – Post Scraping Utility for X
+
+An automation tool that programmatically scrapes tweet content and engagement data from X (formerly Twitter), with a CLI wrapper for flexible execution.
+
+### 🧠 1. Scraping Engine & Class Design  
+- **Files**: [`scrapeX.py`](./scrapeX/scrapeX.py), [`scrapeX_readme.md`](./scrapeX/README.md)  
+- **Tech**: Python, Selenium, Threading  
+- **Description**:  
+  - Scrapes tweets using a class-based Selenium engine with configurable time limits and engagement scraping.
+  - Handles authentication, scrolling, duplicate avoidance, and partial-save recovery.
+
+### 💻 2. Command-Line Interface  
+- **File**: [`scrapeX_CLI.py`](./scrapeX/scrapeX_CLI.py)  
+- **Tech**: Python, argparse  
+- **Description**:  
+  - Launch scraping jobs via terminal with full argument control.
+  - Integrates seamlessly with automation scripts and environment variables.
+
+### 📦 3. Output and Use Cases  
+- **Format**: JSON  
+- **Use Cases**:  
+  - Social sentiment analysis  
+  - Topic clustering for NLP pipelines  
+  - Quote tweet engagement tracking
+ 
+<br><br>
 
 ## 🧰 Utilities
 
