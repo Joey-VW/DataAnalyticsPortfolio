@@ -391,8 +391,8 @@ if __name__ == "__main__":
         password=xpw,
         target_url="https://x.com/search?q=(Elon%20OR%20Musk)%20lang%3Aen&src=typed_query", # e.g., https://x.com/search?q=(Elon%20OR%20Musk)%20lang%3Aen&src=typed_query
         time_limit="00:20:00",
-        existing_posts_path='post_data_20250324_1043.json',  # e.g., "existing_posts.json"
-        do_scrape_engagements=True,
-        headless=True
+        # existing_posts_path='post_data_20250324_1043.json',  # e.g., "existing_posts.json"
+        # do_scrape_engagements=True,
+        # headless=True
     )
     scraper.run()
