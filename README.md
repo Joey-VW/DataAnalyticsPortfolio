@@ -4,7 +4,7 @@ Welcome to my data analytics portfolio! I'm a data professional with 7+ years of
 
 <br><br>
 
-## 🚀 Featured Project: `Procurement KPI Analysis`
+## 🚀 Featured Project: [`Procurement KPI Analysis`](./Procurement_KPI_Analysis)
 
 A full-stack analytics project that demonstrates how raw procurement data is transformed, analyzed, and visualized to provide actionable business insights.
 
@@ -32,7 +32,7 @@ A full-stack analytics project that demonstrates how raw procurement data is tra
 
 <br><br>
 
-## 🕸️ Featured Project: `ScrapeX` – Post Scraping Utility for X
+## 🕸️ Featured Project: [`ScrapeX`](./ScrapeX) – Post Scraping Utility for X
 
 An automation tool that programmatically scrapes tweet content and engagement data from X (formerly Twitter), with a CLI wrapper for flexible execution.
 
@@ -57,6 +57,29 @@ An automation tool that programmatically scrapes tweet content and engagement da
   - Topic clustering for NLP pipelines  
   - Quote tweet engagement tracking
  
+<br><br>
+
+## ➡️ Featured Project: [`Quote-to-Cash Workflow Audit`](./Quote-to-Cash%20Workflow%20Audit)
+An exploratory audit of the Quote-to-Cash process using mock data to simulate Salesforce → Zuora → RevPro integrations.
+
+### 🔍 1. Dataset Inspection & Join Logic
+- **Files**: [`audit.ipynb`](./Quote-to-Cash%20Workflow%20Audit/audit.ipynb), [`qtc_mock_datasource.xlsx`](./Quote-to-Cash%20Workflow%20Audit/qtc_mock_datasource.xlsx)
+- **Tech**: Python, pandas, Jupyter Notebook
+- **Description**:
+  - Synthesizes opportunity, subscription, and revenue recognition data from three systems.
+  - Applies summary statistics and workflow mapping to identify timing gaps in the QTC lifecycle.
+
+### 📊 2. Lag Time Analysis
+- **Metrics Tracked**:
+  - `days_to_close`: Opportunity creation → deal won
+  - `days_to_start`: Deal won → subscription activation
+  - `days_to_revenue`: Subscription start → revenue recognition
+- **Visualization**: Histograms and descriptive stats to explore bottlenecks or delays.
+
+### 📈 3. Outcome
+- Illustrates how real businesses can audit their revenue workflows for friction and efficiency.
+- Demonstrates mock analysis workflows that are portable to real datasets and CRM systems.
+
 <br><br>
 
 ## 🧰 Utilities
