@@ -6,14 +6,14 @@ It demonstrates how data from multiple systems can be joined, audited, and visua
 
 ## 📁 Files
 
-- **`audit.ipynb`**  
+- [**`audit.ipynb`**](/Quote-to-Cash%20Workflow%20Audit/audit.ipynb)
   An interactive Jupyter notebook that loads, inspects, and analyzes the quote-to-cash data. Includes:
   - Exploratory summaries
   - Conversion rate analysis
   - Timing metrics (e.g., days to close, days to revenue)
   - Visualizations of the workflow lags
 
-- **`qtc_mock_datasource.xlsx`**  
+- [**`qtc_mock_datasource.xlsx`**](/Quote-to-Cash%20Workflow%20Audit/qtc_mock_datasource.xlsx)
   A mock dataset representing the three key systems involved:
   - `salesforce_opportunities`: CRM stage tracking
   - `zuora_subscriptions`: Subscription lifecycle & billing
